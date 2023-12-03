@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   
+
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+
+<meta charset="UTF-8" />
+<meta name="language" content="ES" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- slider==== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+<!-- end==== -->
+<!--ICONIFY-->
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!--STYLE SHEET
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/animate.css" />
+<link rel="stylesheet" href="assets/css/home.css" />-->
+
+</head>
+<body>
+
+<!--NAV-->
+<nav class="flex">
+    <figure class="logo"><h1>
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/zlvwjgll.json"
+    trigger="hover"
+    colors="primary:#92140c,secondary:#08a88a,tertiary:#4bb3fd,quaternary:#ffc738,quinary:#121331"
+    style="width:50px;height:50px">
+</lord-icon>
+        Jyoti Furniture</h1></figure>
+    <a href="javascript:void(0)" class="ham" onclick="closer()">
+    </a>
+</nav>
+
+<!--MENU-->
+<menu>
+    <div class="details padding_1x">
+        <a href="javascript:void(0)"><iconify-icon icon="iconoir:phone"></iconify-icon> (+000) 123 4567</a>
+        <a href="mailto:info@websitename.com"><iconify-icon icon="mdi:email-outline"></iconify-icon>http://www.instagram.com/its_jyoti_prajapati_ </a>
+        <a href="javascript:void(0)"><iconify-icon icon="entypo:address"></iconify-icon> 24971 Amar Colony, East Gokal Pur, Delhi</a>
+        <a href="javascript:void(0)"><iconify-icon icon="ri:time-line"></iconify-icon> Every day, 6am - 6pm</a>
+    </div>
+    <div class="links padding_1x">
+        <a href="#">Home</a>
+        <a href="#">Recycling</a>
+        <a href="#">Contact us</a>
+        <a href="#">About us</a>
+    </div>
+</menu>
+
+<!--HEADER-->
+<header>
+    <article>
+        <h1 class="title big"> <em>Chic</em> & <em>Unique</em> Pieces For Your Home<em>.</em> </h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <a href="#More" class="btn btn_3">Explore more</a>
+    </article>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-light fa-arrow-up"></i></button>
+<!--MAIN-->
+<main id="More">
+    <!--DIVISION_1-->
+    <div class="divisions division_1 flex padding_2x">
+        <div class="flex_content padding_2x">
+            <figure>
+                <img src="https://i.postimg.cc/qqt4ntzz/01.jpg" alt="" loading="lazy" />
+            </figure>
+        </div>
+        <div class="flex_content padding_2x">
+            <article>
+                <h2 class="title medium">Let's make your Interior better.</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                <aside class="fixed_flex">
+                    <ul id="counter">
+                    <span>
+                        <li>
+                            <span class="count percent" data-count="200">
+                              0 +
+                            </span>
+                          </li>
+                        <p>New Furnitures</p>
+                    </span>
+                    <span>
+                        <li>
+                            <span class="count percent" data-count="100">
+                              0
+                            </span>
+                          </li>
+                        <p>Recycled Products</p>
+                    </span>
+                    <span>
+                        <li>
+                            <span class="count percent" data-count="300">
+                              0
+                            </span>
+                          </li>
+                        <p>Costumer Reach</p>
+                    </span>
+                    <span>
+                        <li>
+                            <span class="count percent" data-count="1250">
+                              0
+                            </span>
+                          </li>
+                        <p>people Visits</p>
+                    </span>
+                </ul>
+                </aside>
+            </article>
+        </div>
+    </div>
+    <div class="uk-margin"></div>
+   <div class="range-head"> <h1>Explore Our Furniture Range</h1></div>
+    <div class="uk-section"><div class="owl-carousel owl-theme">
+      
+        <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+           <h1>Sofa</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/product_2022100615031665068596_50153.jpg?tr=w-1200,q-100,lo-true" alt="">
+            </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                <h1>Beds</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/709651679122889.jpg?tr=w-938,q-100,pr-true" alt="">
+        </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+               <h1>Wardrobes</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/595421679143459.jpg?tr=w-1200,q-100,lo-true" alt="">
+            </a>      </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+            <h1>Dining</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/339771693548852.jpg?tr=w-1200,q-100,lo-true" alt="">
+            </a> </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+              
+              <h1>Cupboard</h1>  <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/190341693823920.jpg?tr=w-1200,q-100,lo-true" alt="">
+          </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+          <h1>Table</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/33271689314948.jpg" alt="">
+            </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+           <h1>Desk</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/33271689314948.jpg" alt="">
+           </a> </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+             <h1>Tv Units</h1>
+                <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/659221676639022.jpg?tr=w-1200,q-100,lo-true" alt="">
+          </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+            
+            <h1>Study Table</h1>    <img src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/product_2022100611301665055812_23579.jpg?tr=w-1200,q-100,lo-true" alt="">
+        </a>  </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+            <h1>Table</h1>
+                <img src="https://www.ulcdn.net/images/products/820200/product/FVTBCF62BL69212_LP.jpg?1685699287" alt="">
+         </a>   </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+           <h1>Table</h1>
+                <img src="https://www.ulcdn.net/images/products/820200/product/FVTBCF62BL69212_LP.jpg?1685699287" alt="">
+            </a>    </div>
+          
+      </div>
+         <div class="item">
+            <a href="furnituredetails.html">
+            <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+              
+              <h1>Shoe Racks</h1>  <img src="https://www.ulcdn.net/images/products/809651/product/Wellington_Shoe_Rack_Bench_transition_LP.png?1683924511" alt="">
+            </a>  </div>
+          
+      </div>
+    </div>
+      </div> <br>
+    <!--DIVISION_2-->
+    <div class="divisions division_2 flex padding_2x">
+        <div class="flex_content padding_2x">
+            <figure>
+                <img src="https://i.postimg.cc/XvVWL1rM/div-2.jpg" alt="" loading="lazy" />
+                <figcaption class="padding_1x">
+                    <h2 class="title medium">What We Do?</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="flex_content cards padding_2x flex">
+            <figure class="flex card">
+                <img src="https://i.postimg.cc/g2ydvbkq/01.jpg" alt="" loading="lazy" />
+                <figcaption class="padding_2x">
+                    <h3 class="title small">Indoor & Outdoor Furniture</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </figcaption>
+            </figure>
+            <figure class="flex card">
+                <figcaption class="padding_2x">
+                    <h3 class="title small">Large contracts for Doors</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </figcaption>
+                <img src="https://i.postimg.cc/FsLhHJM6/02.jpg" alt="" loading="lazy" />
+            </figure>
+            <figure class="flex card">
+                <img src="https://i.postimg.cc/y65VKTb9/03.jpg" alt="" loading="lazy" />
+                <figcaption class="padding_2x">
+                    <h3 class="title small">Kitchen, Bed room sets</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </figcaption>
+            </figure>
+            <figure class="flex card">
+                <figcaption class="padding_2x">
+                    <h3 class="title small">Exibition Stands</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </figcaption>
+                <img src="https://i.postimg.cc/j2GKhs7v/04.jpg" alt="" loading="lazy" />
+            </figure>
+        </div>
+    </div>
+
+      <section class='demo-gallery'>
+        <ul class='wrapper'>
+        <li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIG0kdR_utn8zke7oNm0PwN4XEd7UBA695Wg&usqp=CAU" alt="">
+        </li>
+          <li>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfY4AONvw8pdaHf2qMFYK7cUDT2RMfzmfSA&usqp=CAU" alt="">
+        </li>
+          <li>
+            <img src="https://i.postimg.cc/qqt4ntzz/01.jpg" alt="">
+        </li>
+          <li>
+        <img src="https://classy.co.in/wp-content/uploads/2023/02/Single-Chairs.webp" alt="">  
+        </li>
+        </ul>
+      </section>
+      <section class='demo-gallery'>
+        <ul class='wrapper'>
+          <li>
+            <img src="https://i.postimg.cc/j2GKhs7v/04.jpg" alt="">   
+        </li>
+          <li>
+            <img src="https://i.postimg.cc/y65VKTb9/03.jpg" alt=""/>
+        </li>
+          <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMpe0ls5clNJl-OmY87mPFUab4sRbzCGVRTQ&usqp=CAU" alt="">
+        </li>
+        </ul>
+      </section>
+     
+    
+      <div class="video">
+    
+     
+<div class="video-wrapper">
+	<div class="video-container" id="video-container">
+		<video controls id="video" preload="metadata" poster="https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/home-decor-advice/guides-and-how-tos/mdf-wood-vs-plywood-which-material-is-best-for-your-home-furniture/plywood-for-your-home-furniture.jpg">
+			<source src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
+		</video>
+
+		<div class="play-button-wrapper">
+			<div title="Play video" class="play-gif" id="circle-play-b">
+				<!-- SVG Play Button -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+					<path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="video-text">
+        <h2>Our Philosophy</h2>
+    <h1>Spectacular Creations That Give You A Distinct Look</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
+    
+<button>Learn More</button>
+</div>
+</div>
+
+
+    <div class="divisions division_3 padding_4x">
+        <div class="flex padding_1x">
+        <figure>
+            <img src="https://i.postimg.cc/T3vfL3G3/div-3.png" alt="" loading="lazy" />
+        </figure>
+        <article>
+            <h3 class="title small">Recycle old wood pallets to create Beautiful Furniture Items.</h3>
+            <p>We have a dedicated team to recycle wood waste to create artistic gadgets such as <b>Mobile Holders</b>, <b>Desktop Clocks</b>, <b>Wall Clocks</b>,<b>Pen Holders</b>, <b>Chop Boards</b>, <b>Decorative Items</b> & much more...</p>
+            <a href="#" class="btn btn_1">Contact us</a>
+        </article>
+    </div>
+    </div>
+</main>
+
+<!--FOOTER-->
+<footer class="flex">
+    <div class="flex_content padding_2x">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    <div class="flex_content">
+        <a href="#">Home</a>
+        <a href="#">Contact us</a>
+        <a href="#">About us</a>
+        <a href="#">Cookie Policy</a>
+    </div>
+    <div class="flex_content padding_1x">
+        <p>© 2023 website <a href=" http://www.instagram.com/its_jyoti_prajapati_">Jyoti Prajapati</a>  || All rights reserved</p>
+    </div>
+</footer>
+
+
+<!--ADDITIONAL-->
+<div class="additional flex"></div>
+<a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
+<!-- ===slider=== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+<script>
+    //GLOBAL VARIABLES
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var count = 0;
+
+//DROPDOWN
+$(".dropdown dt").click(function(){
+    $(this).next(".dropdown_content").toggle("slow");
+});
+
+
+//DETECT MOBILE DEVICE
+if (isMobile) {
+    $("menu .details a").click(function(){
+        if ($(this).index() == 0){
+            $(this).attr("href", "tel:1234567890");
+        }
+        if ($(this).index() == 3){
+            popup('<i class="fa fa-times"></i></a><iconify-icon icon="bx:error"></iconify-icon><aside><h3 class="title small">Timings may vary</h3><p>For accurate timings please connect through a call & confirm.</p></aside>', 'alert');
+        }
+    });
+} else {
+    $("menu .details a").click(function(){
+        switch($(this).index()){
+            case 0:
+                return popup('<i class="fa fa-times"></i></a><iconify-icon icon="subway:error" class="error"></iconify-icon><aside><h3 class="title small">Unsupported device</h3><p>It looks like your device won\'t support for <b>calling</b>. Kindly use a Mobile device.</p></aside>', 'alert');
+                break;
+            case 3:
+                 popup('<i class="fa fa-times"></i></a><iconify-icon icon="bx:error"></iconify-icon><aside><h3 class="title small">Timings may vary</h3><p>For accurate timings please connect through a call & confirm.</p></aside>', 'alert');
+                break;
+            default:
+                break;
+        }
+    });
+}
+
+
+//POPUP
+function popup(mssg, type){
+    if(type == "alert"){
+        if ($(".alert").length < 2){
+            count++;
+            $(".additional").append('<section class="alert alert_'+count+' flex padding_1x"><a href="javascript:void(0)" onclick="closer(\'modal\',\'alert_'+count+'\')" class="close">'+mssg+'</section>');
+            setTimeout(function(){$(".alert_"+count).remove();}, 10000);
+            if ($(".alert").length > 0){ setTimeout(function(){$(".alert_"+count).prev().remove();}, 4000); }
+        }
+    }
+}
+
+
+//HAM
+$(".ham").click(function(){
+    if ($("menu").css("left") != "0px"){
+        $(this).addClass(" hamburger");
+        $("body").append('<div class="overlay" onclick="closer()"></div>');
+        $("menu").css("left","0px");
+        $("body").css({'overflow-y':'hidden'});
+    }
+});
+
+
+//CLOSE
+$(".close").click(function(){
+    $(".overlay").remove();
+    if ($("menu").css("left") >= "0px"){
+        $(".ham").removeClass(" hamburger");
+        $("menu").css("left","-105%");
+        $("body").css({'overflow-y':'visible'});
+    }
+});
+function closer(type, el){
+        if(type=="modal"){
+        $("."+el).remove();
+        return 1;
+        }
+    $(".overlay").remove();
+    if ($("menu").css("left") >= "0px"){
+        $(".ham").removeClass(" hamburger");
+        $("menu").css("left","-105%");
+        $("body").css({'overflow-y':'visible'});
+    }
+}
+var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    counted = 1;
+  }
+
+});
+// gsap.registerPlugin(ScrollTrigger);
+
+const images = gsap.utils.toArray('img');
+// const loader = document.querySelector('.loader--text');
+// const updateProgress = (instance) => 
+//   loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
+
+const showDemo = () => {
+  document.body.style.overflow = 'auto';
+  document.scrollingElement.scrollTo(0, 0);
+  gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+  
+  gsap.utils.toArray('section').forEach((section, index) => {
+    const w = section.querySelector('.wrapper');
+    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+    gsap.fromTo(w, {  x  }, {
+      x: xEnd,
+      scrollTrigger: { 
+        trigger: section, 
+        scrub: 0.5 
+      }
+    });
+  });
+}
+
+imagesLoaded(images).on('always', showDemo);
+
+
+const video = document.getElementById("video");
+const circlePlayButton = document.getElementById("circle-play-b");
+
+function togglePlay() {
+	if (video.paused || video.ended) {
+		video.play();
+	} else {
+		video.pause();
+	}
+}
+
+circlePlayButton.addEventListener("click", togglePlay);
+video.addEventListener("playing", function () {
+	circlePlayButton.style.opacity = 0;
+});
+video.addEventListener("pause", function () {
+	circlePlayButton.style.opacity = 1;
+});
+$('.owl-carousel').owlCarousel({
+    loop:false,
+  stagePadding: 15,
+    margin:10,
+    nav:true,
+  navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        640:{
+            items:2
+        },
+      960:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}     
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<head>
+  <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+ <style>
+      ul li{
+  cursor: pointer;
+}
+.menu{
+  display: flex;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.menu li{
+  margin-right: 50px;
+}
+.is-hidden{
+  display:none !important;
+}
+.is-hidden .splide__arrows{
+visibility: hidden;
+}
+.ab{
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+   </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu" >
+          <li data-color-name="red"></li>
+          <li data-color-name="blue"></li>
+            <li data-color-name="green"></li>
+        </ul>
+  </nav>
+        <div class="splide red" id="a">
+            <div class="splide__track">
+                <ul class="splide__list ">
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+                    <li class="splide__slide"><div class="ab"></div></li>
+             
+                  </ul>
+          </div>
+  </div>
+  <div class="splide blue" id="b">
+            <div class="splide__track">
+                <ul class="splide__list ">
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/0000FF/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/0000FF/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/0000FF/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/0000FF/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/0000FF/" alt=""></li>
+                </ul>
+             </div>
+  </div>
+  <div class="splide green" id="c">
+            <div class="splide__track">
+                <ul class="splide__list  ">
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/008000/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/008000/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/008000/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/008000/" alt=""></li>
+                    <li class="splide__slide"><img src="https://via.placeholder.com/150/008000/" alt=""></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+          const a = new Splide('#a', {
+              perPage: 5,
+              perMove: 1,
+          }).mount();
+       
+          const b = new Splide('#b', {
+              perPage: 2,
+              perMove: 1,
+          }).mount();
+       
+          
+      });
+      
+    </script>
+
+  
+</body>
+
+</html>
